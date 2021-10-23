@@ -97,8 +97,8 @@ int main()
 
 #ifdef LOOP_VERSION
     fout<<"}"<<endl;
-#endif // LOOP_VERSION
     fout<<"cout<<used<<endl;"<<endl;
+#endif // LOOP_VERSION
     fout<<"return 0;}"<<endl;
 
     fout.close();
