@@ -10,7 +10,7 @@
 
 //#define LOOP_VERSION
 
-#define CPP20
+//#define CPP20
 
 using namespace std;
 
