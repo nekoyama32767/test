@@ -28,12 +28,12 @@ int main()
     fout<<"#include <string>"<<endl;
 #ifdef LOOP_VERSION
     fout<<"#include <ctime>"<<endl;
+    fout<<"#include \"xorshift128p.h\""<<endl;
 #ifdef CPP20
     fout<<"#include <ranges>"<<endl;
 #endif // CPP20
 #endif // LOOP_VERSON
 
-    fout<<"#include \"xorshift128p.h\""<<endl;
     fout<<"using namespace std;"<<endl;
 
     fout<<"int main(int argc,char* argv[]){"<<endl;
