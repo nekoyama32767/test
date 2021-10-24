@@ -68,11 +68,11 @@ int main()
     dilist[2]="白位数是：";
     dilist[3]="千位数是：";
     dilist[4]="万位数是：";
-    for (auto index:views::iota(1,100000))
+    for (auto now:views::iota(1,100000)|views::transform([](int i){return to_string(i);}))
     {
-        if (index%100==0)
-            cout<<"working on:"<<index<<endl;
-        string now=to_string(index);
+        /*if (index%100==0)
+            cout<<"working on:"<<index<<endl;*/
+        //string now=to_string(index);
         stringstream ssbuffer;
         ssbuffer<<"case "<<now<<":\n";
         #ifdef ORIGIN_VERSION
