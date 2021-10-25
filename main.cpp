@@ -78,7 +78,7 @@ int main()
         #ifdef ORIGIN_VERSION
         ssbuffer<<"cout << \"是"<<now.length()<<"位数\"<<endl;\n";
         int offset=0;
-        for (auto di:now)
+        for (auto di:now|views::reverse)
         {
             ssbuffer<<"cout<<\""<<dilist[offset++]<<di<<"\"<<endl;\n";
         }
